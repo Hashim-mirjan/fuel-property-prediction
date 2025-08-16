@@ -86,7 +86,7 @@ Stacking Strategy:
 This strategy ensures that the final validation set is completely unseen by both base and meta models, enabling an unbiased evaluation of the full ensemble.
 
 Meta Model:
-- A Ridge regression model was used to combine predictions from the base models. The meta-model was trained using out-of-fold predictions from the base layer.
+- A Ridge regression model was used to combine predictions from the base models. The meta-model was trained using predictions from the base layer.
 
 ## Results
 
