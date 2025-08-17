@@ -57,6 +57,9 @@ Features pairs with a pearson correlation coefficient over 0.9 were flagged for 
 
 These can be explained by component 4's distribution. Unlike the other compnents, component_4_fraction is never 0 so it is always present and for the majority of mixtures it is equal to or close to 0.5. Its lower variance means that the weighted features don't add much value and may harm the model.
 
+<img width="587" height="422" alt="image" src="https://github.com/user-attachments/assets/795623fb-5e92-41a0-91f1-34f716b603ca" />
+
+
 Result: Dropped Component 4 weighted properties but maintained the others
 
 ## Modelling
