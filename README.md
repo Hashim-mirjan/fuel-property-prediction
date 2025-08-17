@@ -1,3 +1,20 @@
+## About this Repository
+
+This repository contains the full pipeline for a machine learning model developed during a hackathon to predict fuel blend properties based on their component properties and fractions.
+
+It includes:
+
+:diamond_shape_with_a_dot_inside: Stacked_Model.py: A script for training a stacked ensemble model using LightGBM, XGBoost, CatBoost, and Ridge
+
+:diamond_shape_with_a_dot_inside: Prediction_demo.py: A Streamlit app for demoing predictions on new input data
+
+:file_folder: data/: Contains the training and testing datasets
+
+:file_folder: src/: Includes preprocessing and data processing scripts
+
+:file_folder: Models/: Stores the trained ensemble model components
+
+
 ## Project Overview
 
 This project focuses on predicting 10 unknown fuel properties of a Sustainable Aviation Fuel (SAF) blend from blend component properties.
@@ -123,3 +140,24 @@ Breaking down the final model average MAPE into individual properties:
 | BlendProperty8   | 0.8565 |
 | BlendProperty7   | 1.9174 |
 
+BlendProperty7 shows significantly higher error compared to the others, which skews the overall average MAPE. If we exclude BlendProperty7 from the results, the average MAPE across the remaining properties drops to approximately 0.43 (43%). This is very strong considering the type of data.
+
+To improve performance further:
+- Certain properties may benefit from dedicated, property-specific models and tailored feature engineering.
+- A deeper domain understanding of the physical meaning behind each blend property could inform more effective modeling choices and feature selection.
+
+## How to Run
+
+1. Install Dependencies
+
+Make sure you have Python installed (preferably 3.8+), then install the required packages using:
+
+pip install -r requirements.txt
+
+2. Run the Streamlit Demo
+
+To launch the interactive prediction demo:
+
+streamlit run Prediction_demo.py
+
+This will open a web app in your browser. You can upload the test.csv data or upload a CSV file matching the template format to receive fuel property predictions.
