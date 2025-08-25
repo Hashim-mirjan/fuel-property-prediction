@@ -19,7 +19,7 @@ It includes:
 
 This project focuses on predicting 10 unknown fuel properties of a Sustainable Aviation Fuel (SAF) blend from blend component properties.
 
-SAFs are very important for reducing the environmental impact of the aviation sector, but crafting the perfect belnd from different sustainable fuels and traditional fuels is a challenge. Hence, this project aims to predict blend properties given the properties and blend fractions of the components to enable rapid evaluation of many blend comobinations.
+SAFs are very important for reducing the environmental impact of the aviation sector, but crafting the perfect belnd from different sustainable fuels and traditional fuels is a challenge. Hence, this project aims to predict blend properties given the properties and blend fractions of the components to enable rapid evaluation of many blend combinations.
 
 Context: This project was developed during Shell.ai Hackathon for Sustainable and Affordable Energy 2025.
 
