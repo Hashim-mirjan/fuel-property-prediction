@@ -1,0 +1,9 @@
+catboost
+joblib
+lightgbm
+matplotlib
+numpy
+pandas
+scikit-learn>=0.24
+streamlit
+xgboost
