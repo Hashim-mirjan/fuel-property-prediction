@@ -148,16 +148,18 @@ To improve performance further:
 
 ## How to Run
 
-1. Install Dependencies
-
-Make sure you have Python installed (preferably 3.8+), then install the required packages using:
-
+### 1) Clone the repo
+```bash
+git clone https://github.com/Hashim-mirjan/fuel-property-prediction.git
+cd fuel-property-prediction
+```
+### 2) Install dependencies
+```bash
 pip install -r requirements.txt
-
-2. Run the Streamlit Demo
-
-To launch the interactive prediction demo:
-
+```
+### 3) Run the app (from the repo folder)
+```bash
 streamlit run Prediction_demo.py
-
+```
 This will open a web app in your browser. You can upload the test.csv data or upload a CSV file matching the template format to receive fuel property predictions.
+
