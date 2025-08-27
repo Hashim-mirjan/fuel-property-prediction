@@ -12,8 +12,8 @@ import os
 # Change working directory to the folder where this script is located
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-from src.Data import loadData
-from src.Data import remove_nulls, add_weighted_features, compute_entropy, add_weighted_mean_properties, add_constraint_aware_features, add_normalized_entropy_features, add_polynomial_features
+from src.data import loadData
+from src.data import remove_nulls, add_weighted_features, compute_entropy, add_weighted_mean_properties, add_constraint_aware_features, add_normalized_entropy_features, add_polynomial_features
 
 X, y, X_test = loadData("train.csv", "test.csv")
 
@@ -172,3 +172,4 @@ def evaluate_model(final_pred, y_val, show_split):
 final_pred, y_val, lgbm, ridge, catboost, xgboost, meta = stackedensemble_model(X, y, X_test)
 
 evaluate_model(final_pred, y_val, True)
+
