@@ -6,7 +6,7 @@ import streamlit as st
 import gzip
 from pathlib import Path
 
-st.set_page_config(page_title="Stacked Ensemble Tester", page_icon="🧱", layout="wide")
+st.set_page_config(page_title="Stacked Ensemble Tester", page_icon="⚡", layout="wide")
 
 @st.cache_resource(show_spinner=False)
 def load_models():
@@ -99,7 +99,7 @@ st.title("Sustainable Avaiation Fuel Property Predictor")
 download_template()
 x_test = gather_input_data(55)
 
-from src.Data import remove_nulls, add_weighted_features, compute_entropy, add_weighted_mean_properties, add_constraint_aware_features
+from src.data import remove_nulls, add_weighted_features, compute_entropy, add_weighted_mean_properties, add_constraint_aware_features
 
 x_test = remove_nulls(x_test)
 n_rows = x_test.shape[0]
@@ -147,6 +147,7 @@ if option == "CSV":
 elif option == "In-site":
     st.write("Predictions:")
     st.dataframe(stacked_pred_df)
+
 
 
 
