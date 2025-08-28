@@ -4,15 +4,15 @@ This repository contains the full pipeline for a machine learning model develope
 
 It includes:
 
-:diamond_shape_with_a_dot_inside: Stacked_Model.py: A script for training a stacked ensemble model using LightGBM, XGBoost, CatBoost, and Ridge
+Stacked_Model.py: A script for training a stacked ensemble model using LightGBM, XGBoost, CatBoost, and Ridge
 
-:diamond_shape_with_a_dot_inside: Prediction_demo.py: A Streamlit app for demoing predictions on new input data
+Prediction_demo.py: A Streamlit app for demoing predictions on new input data
 
-:file_folder: data/: Contains the training and testing datasets
+data/: Contains the training and testing datasets
 
-:file_folder: src/: Includes preprocessing and data processing scripts
+src/: Includes preprocessing and data processing scripts
 
-:file_folder: Models/: Stores the trained ensemble model components
+Models/: Stores the trained ensemble model components
 
 
 ## Project Overview
