@@ -162,4 +162,4 @@ pip install -r requirements.txt
 streamlit run Prediction_demo.py
 ```
 This will open a web app in your browser. You can upload the test.csv data or upload a CSV file matching the template format to receive fuel property predictions.
-
+Download test.csv from the Data folder if you want to test the model with it. This was the competition test set that we were evaluated on.
