@@ -17,6 +17,13 @@ def loadData(trainpath="train.csv", testpath="test.csv"):
 
     return X, y, X_test
 
+def remove_nulls(df):
+    # Remove rows with any null values
+    df = df.dropna()
+    # Reset index after dropping rows
+    df.reset_index(drop=True, inplace=True)
+    return df
+
 # function to multiply component feature by component percentage to get a weighted amount for that feature
 def add_weighted_features(df):
     df = df.copy()  
@@ -91,4 +98,5 @@ def add_polynomial_features(X, X_test, columns, degree=2):
     X_out = pd.concat([X, X_poly_filtered], axis=1)
     X_test_out = pd.concat([X_test, X_test_poly_filtered], axis=1)
     return X_out, X_test_out
+
 
